@@ -391,7 +391,6 @@ class MonteCarloPlayer : public Player<S_ROWS, S_COLS> {
 template <size_t S_ROWS, size_t S_COLS>
 void playTwoPlayers(ConnectN::Player<S_ROWS, S_COLS>* playerPositive,
                     ConnectN::Player<S_ROWS, S_COLS>* playerNegative) {
-    ConnectN::Shape shape{6, 7};
     ConnectN::Game game{ConnectN::Game(playerPositive, playerNegative)};
     game.gameLoop();
 }
